@@ -1,6 +1,6 @@
 CC BY-NC-SA 2016 Copyright Mark Benson etc etc
 
-![PCB](https://github.com/MarkJB/Eggbot-Spherebot-Polargraph-Controller/blob/master/eggbot-spherebot-polargraph-controller_front.png)
+![PCB](https://github.com/MarkJB/pi-2-stepper-board/blob/master/pi-2-stepper-board.png)
 
 This is my Pycupi Polargraph Pi Plate especially for Pi day. 
 
