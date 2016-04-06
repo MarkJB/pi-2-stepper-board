@@ -20,5 +20,7 @@ I wouldn't bother making one yet...
 
 \* 'HAT' because while the board supports the HAT spec, it would have to be assembled with the HAT spec components (the EEPROM would need to be programmed, plus a few other pyhsical additions like a specific height GPIO connector and stand-offs) to be considered a HAT without any reservations.
 
-*v1.0a - Pi 2/3 add-on board
-*v1.0b - Pi 2/3 HAT spec capable board
+Repo is a bit messy right now as I have two versions of the board. I'll tidy it up and split them into branches, but for now they are as follows.
+
+* v1.0a - Pi 2/3 add-on board = "pi-2-stepper-board.\*"
+* v1.0b - Pi 2/3 HAT spec capable board = "pi-2-stepper-board-hat-spec.\*"
