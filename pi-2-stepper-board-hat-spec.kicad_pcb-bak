@@ -15,10 +15,10 @@
   (page A4)
   (title_block
     (title "Pi 2/3 Arduino Stepper board")
-    (date 2016-03-14)
+    (date 2016-04-05)
     (rev v1.0)
     (comment 1 "Copyright Mark Benson 2016")
-    (comment 2 "License: CC-BY-NC")
+    (comment 2 "License: CC-BY 3.0")
   )
 
   (layers
