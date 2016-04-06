@@ -4,7 +4,7 @@ No warranty implied or given. Use at your own risk.
 
 ![PCB](https://github.com/MarkJB/pi-2-stepper-board/blob/master/pi-2-stepper-board-hat-spec_front.png)
 
-###This is my Pi HAT* drawing machine add-on board for the Raspberry Pi 2 (and later).
+###This is my Pi 'HAT'* drawing machine add-on board for the Raspberry Pi 2 (and later).
 
 It can drive 2 stepper motors and a servo, has provision for end stop switches and both I2C and SPI peripherals.
 
@@ -18,4 +18,4 @@ I wouldn't bother making one yet...
 
 ![PCB](https://github.com/MarkJB/pi-2-stepper-board/blob/master/pi-2-stepper-board-hat-spec_back.png)
 
-
+* 'HAT' because while the board supports the HAT spec, it would have to be assembled with the HAT spec components (the EEPROM would need to be programmed, plus a few other pyhsical additions like a specific height GPIO connector and stand-offs) to be considered a HAT without any reservations.
