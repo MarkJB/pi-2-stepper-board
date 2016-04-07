@@ -6,6 +6,8 @@ No warranty implied or given. Use at your own risk.
 
 * v1.0b - Pi 2/3 HAT spec capable board
 
+See master for latest version.
+
 ![PCB](https://github.com/MarkJB/pi-2-stepper-board/blob/v1.0b/pi-2-stepper-board-hat-spec_front.png)
 
 ###This is my Pi 'HAT'* drawing machine add-on board for the Raspberry Pi 2 (and later).
