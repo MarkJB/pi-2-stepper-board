@@ -1,5 +1,5 @@
 Copyright 2016 Mark Benson
-License: CC-BY 3.0
+License: CC-BY 4.0
 No warranty implied or given. Use at your own risk.
 
 ![PCB](https://github.com/MarkJB/pi-2-stepper-board/blob/master/pi-2-stepper-board-hat-spec_front.png)
