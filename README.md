@@ -1,5 +1,7 @@
-Copyright 2016 Mark Benson
+Copyright 2016 Mark Benson. Portions probably copyright Raspberry Pi foundation (https://github.com/raspberrypi/hats) (Specifically the HAT Spec I2C EEPROM & Back-feed circuits) so I'm not attempting to assert any Copyright over them, besides my work is licensed under Creative Commons so not sure what else I can do. I'm not a lawyer... thinking about this stuff makes my brain ache.
+
 License: CC-BY 4.0
+
 No warranty implied or given. Use at your own risk.
 
 ![PCB](https://github.com/MarkJB/pi-2-stepper-board/blob/master/pi-2-stepper-board-hat-spec_front.png)
