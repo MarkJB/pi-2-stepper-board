@@ -40,7 +40,7 @@ Date "2016-04-24"
 Rev "1.01b"
 Comp ""
 Comment1 "Copyright Mark Benson 2016"
-Comment2 "License: CC-BY 3.0"
+Comment2 "License: CC-BY 4.0"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -1229,35 +1229,4 @@ Wire Wire Line
 	1250 6400 1250 6250
 Wire Wire Line
 	1250 5950 1250 5650
-$Comp
-L CONN_01X03 P11
-U 1 1 571CEBE9
-P 5900 6100
-F 0 "P11" H 5900 6300 50  0000 C CNN
-F 1 "Debug" V 6000 6100 50  0000 C CNN
-F 2 "" H 5900 6100 50  0000 C CNN
-F 3 "" H 5900 6100 50  0000 C CNN
-	1    5900 6100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5800 5900 5800 5600
-Wire Wire Line
-	5900 5900 5900 5600
-Wire Wire Line
-	6000 5900 6000 5600
-Text Label 6000 5600 3    60   ~ 0
-D10
-Text Label 5900 5600 3    60   ~ 0
-D11
-Text Label 5800 5600 3    60   ~ 0
-GND
-Wire Wire Line
-	5050 4600 5400 4600
-Wire Wire Line
-	5050 4500 5400 4500
-Text Label 5400 4600 2    60   ~ 0
-D10
-Text Label 5400 4500 2    60   ~ 0
-D11
 $EndSCHEMATC

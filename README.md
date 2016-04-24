@@ -4,9 +4,10 @@ License: CC-BY 4.0
 
 No warranty implied or given. Use at your own risk.
 
+
 Repo branches:
 
-Master is at v1.0b
+Master is at v1.01b
 
 * v1.0a - Pi 2/3 add-on board. Original version.
 * v1.0b - Pi 2/3 HAT spec capable board. PCB follows the Pi Foundation HAT spec https://github.com/raspberrypi/hats
