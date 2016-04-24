@@ -1232,4 +1232,6 @@ Wire Wire Line
 	1250 6200 1250 5950
 Text Notes 1150 7450 0    60   ~ 0
 LED
+Text Notes 7000 2350 0    60   ~ 0
+HAT spec Back-feed
 $EndSCHEMATC
