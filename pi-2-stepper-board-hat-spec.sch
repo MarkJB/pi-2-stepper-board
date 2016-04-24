@@ -40,7 +40,7 @@ Date "2016-04-24"
 Rev "1.01b"
 Comp ""
 Comment1 "Copyright Mark Benson 2016"
-Comment2 "License: CC-BY 3.0"
+Comment2 "License: CC-BY 4.0"
 Comment3 ""
 Comment4 ""
 $EndDescr
