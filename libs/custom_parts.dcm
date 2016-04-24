@@ -1,3 +1,8 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP Bi_colour_LED
+D DOUBLE type Bicolore
+K LED
+$ENDCMP
+#
 #End Doc Library

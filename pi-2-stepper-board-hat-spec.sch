@@ -36,8 +36,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Pi 2/3 Arduino Stepper board"
-Date "2016-04-06"
-Rev "1"
+Date "2016-04-24"
+Rev "1.01b"
 Comp ""
 Comment1 "Copyright Mark Benson 2016"
 Comment2 "License: CC-BY 3.0"
@@ -314,9 +314,9 @@ Text Label 1250 4700 0    60   ~ 0
 GND
 Text Label 1250 3900 0    60   ~ 0
 GND
-Text Label 6350 5900 0    60   ~ 0
+Text Label 7500 5900 2    60   ~ 0
 PiTx
-Text Label 6350 6000 0    60   ~ 0
+Text Label 7500 6000 2    60   ~ 0
 PiRx
 Text Label 3250 3800 2    60   ~ 0
 PiTx
@@ -326,9 +326,9 @@ Text Label 3750 3500 0    60   ~ 0
 ArdTx
 Text Label 3750 3600 0    60   ~ 0
 ArdRx
-Text Label 7500 6000 2    60   ~ 0
+Text Label 6350 6000 0    60   ~ 0
 ArdTx
-Text Label 7500 5900 2    60   ~ 0
+Text Label 6350 5900 0    60   ~ 0
 ArdRx
 Text Label 8450 5550 3    60   ~ 0
 GND
@@ -666,7 +666,7 @@ Wire Wire Line
 Wire Wire Line
 	6150 4950 6150 5050
 Wire Wire Line
-	4900 1850 4900 1550
+	4900 1550 4900 1850
 Wire Wire Line
 	4900 1550 4750 1550
 Wire Wire Line
@@ -680,7 +680,7 @@ Wire Wire Line
 	3950 1650 3800 1650
 Connection ~ 3800 1650
 Wire Wire Line
-	3950 1750 3700 1750
+	3700 1750 3950 1750
 Wire Wire Line
 	3700 1750 3700 1450
 Wire Wire Line
@@ -794,9 +794,9 @@ F 3 "" H 4500 6400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 6250 4500 6200
+	4500 6200 4500 6250
 Wire Wire Line
-	4500 6200 4200 6200
+	4200 6200 4500 6200
 Wire Wire Line
 	4200 6200 4200 6250
 Wire Wire Line
@@ -840,9 +840,9 @@ Pi3v3
 Wire Wire Line
 	1650 4300 1250 4300
 Wire Wire Line
-	9400 1550 9550 1550
+	9550 1550 9400 1550
 Wire Wire Line
-	9550 1550 9550 1100
+	9550 1100 9550 1550
 Text Label 9550 1100 3    60   ~ 0
 Pi3v3
 $Comp
@@ -1044,13 +1044,13 @@ F 3 "" H 6650 2050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6500 2550 6500 2350
+	6500 2350 6500 2550
 Wire Wire Line
-	6800 2550 6800 2350
+	6800 2350 6800 2550
 Wire Wire Line
-	6700 2350 6700 2450
+	6700 2450 6700 2350
 Wire Wire Line
-	6700 2450 6500 2450
+	6500 2450 6700 2450
 Connection ~ 6500 2450
 Wire Wire Line
 	6600 2350 6600 2450
@@ -1119,9 +1119,9 @@ Wire Wire Line
 Wire Wire Line
 	6350 1350 6600 1350
 Wire Wire Line
-	7850 1600 7950 1600
+	7950 1600 7850 1600
 Wire Wire Line
-	7950 1600 7950 1250
+	7950 1250 7950 1600
 Wire Wire Line
 	6850 1750 6850 1600
 Wire Wire Line
@@ -1186,52 +1186,47 @@ Pi5v
 Text Label 10550 5550 3    60   ~ 0
 Pi5v
 $Comp
-L LED D1
-U 1 1 57040A56
-P 1250 6800
-F 0 "D1" H 1250 6900 50  0000 C CNN
-F 1 "LED" H 1250 6700 50  0000 C CNN
-F 2 "LEDs:LED-3MM" H 1250 6800 50  0001 C CNN
-F 3 "" H 1250 6800 50  0000 C CNN
-	1    1250 6800
-	0    1    1    0   
-$EndComp
-$Comp
-L GND #PWR015
-U 1 1 57040C64
-P 1250 7100
-F 0 "#PWR015" H 1250 6850 50  0001 C CNN
-F 1 "GND" H 1250 6950 50  0000 C CNN
-F 2 "" H 1250 7100 50  0000 C CNN
-F 3 "" H 1250 7100 50  0000 C CNN
-	1    1250 7100
-	1    0    0    -1  
-$EndComp
-$Comp
 L R R1
 U 1 1 57040CFB
-P 1250 6350
-F 0 "R1" H 1330 6350 50  0000 C CNN
-F 1 "330R" V 1250 6350 50  0000 C CNN
-F 2 "Discret:R1" V 1180 6350 50  0001 C CNN
-F 3 "" H 1250 6350 50  0000 C CNN
-	1    1250 6350
+P 1250 6100
+F 0 "R1" H 1330 6100 50  0000 C CNN
+F 1 "330R" V 1250 6100 50  0000 C CNN
+F 2 "Discret:R1" V 1180 6100 50  0001 C CNN
+F 3 "" H 1250 6100 50  0000 C CNN
+	1    1250 6100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1250 6600 1250 6500
-Wire Wire Line
-	1250 7000 1250 7100
 Wire Wire Line
 	1650 3800 1250 3800
 Text Label 1250 3800 0    60   ~ 0
-LED
-Text Label 1250 5950 3    60   ~ 0
-LED
-Wire Wire Line
-	1250 6200 1250 5950
+LEDA
+Text Label 1250 5650 3    60   ~ 0
+LEDA
 Text Notes 1150 7450 0    60   ~ 0
 LED
 Text Notes 7000 2350 0    60   ~ 0
 HAT spec Back-feed
+Wire Wire Line
+	1650 4000 1250 4000
+Text Label 1250 4000 0    60   ~ 0
+LEDB
+Wire Wire Line
+	1250 7000 1250 7300
+Text Label 1250 7300 1    60   ~ 0
+LEDB
+$Comp
+L Bi_colour_LED D1
+U 1 1 571CBDC5
+P 1250 6700
+F 0 "D1" H 1250 6925 50  0000 C CNN
+F 1 "Bi_colour_LED" H 1250 6450 50  0000 C CNN
+F 2 "LEDs:LED-3MM" H 1250 6700 50  0001 C CNN
+F 3 "" H 1250 6700 50  0000 C CNN
+	1    1250 6700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1250 6400 1250 6250
+Wire Wire Line
+	1250 5950 1250 5650
 $EndSCHEMATC
