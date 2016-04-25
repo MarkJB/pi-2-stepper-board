@@ -37,7 +37,7 @@ encoding utf-8
 Sheet 1 1
 Title "Pi 2/3 Arduino Stepper board"
 Date "2016-04-24"
-Rev "1.01b"
+Rev "Dev branch"
 Comp ""
 Comment1 "Copyright Mark Benson 2016"
 Comment2 "License: CC-BY 4.0"
@@ -396,20 +396,9 @@ F 3 "" H 4300 1400 60  0000 C CNN
 $EndComp
 Text Label 5400 3800 2    60   ~ 0
 3v3
-$Comp
-L CONN_01X07 P7
-U 1 1 56E5EFFA
-P 9800 6100
-F 0 "P7" H 9800 6500 50  0000 C CNN
-F 1 "Aux1 (SPI)" V 9900 6100 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x07" H 9800 6100 50  0001 C CNN
-F 3 "" H 9800 6100 50  0000 C CNN
-	1    9800 6100
-	0    1    1    0   
-$EndComp
-Text Label 9600 5450 3    60   ~ 0
+Text Label 9800 6400 1    60   ~ 0
 3v3
-Text Label 9500 5450 3    60   ~ 0
+Text Label 9700 5250 3    60   ~ 0
 GND
 $Comp
 L CONN_02X03 P6
@@ -459,9 +448,7 @@ F 3 "" H 3400 6750 50  0000 C CNN
 	1    3400 6750
 	1    0    0    -1  
 $EndComp
-Text Label 2100 6400 0    60   ~ 0
-GPIO21
-Text Label 3250 5400 2    60   ~ 0
+Text Label 10600 5250 3    60   ~ 0
 GPIO21
 $Comp
 L Pi2_3_GPIO U1
@@ -693,18 +680,6 @@ Wire Wire Line
 Wire Wire Line
 	5050 3800 5400 3800
 Wire Wire Line
-	9500 5450 9500 5900
-Wire Wire Line
-	9600 5450 9600 5900
-Wire Wire Line
-	9700 5450 9700 5900
-Wire Wire Line
-	9800 5450 9800 5900
-Wire Wire Line
-	9900 5450 9900 5900
-Wire Wire Line
-	10000 5450 10000 5900
-Wire Wire Line
 	7150 6100 7500 6100
 Wire Wire Line
 	6650 6100 6350 6100
@@ -729,48 +704,25 @@ Wire Wire Line
 	1650 3600 1250 3600
 Wire Wire Line
 	1650 3700 1250 3700
-Wire Wire Line
-	10350 5900 10350 5550
-Wire Wire Line
-	10450 5900 10450 5550
-Wire Wire Line
-	10550 5900 10550 5550
-Wire Wire Line
-	10650 5450 10650 5900
-Text Label 10350 5550 3    60   ~ 0
+Text Label 10400 5250 3    60   ~ 0
 GND
-Text Label 10450 5550 3    60   ~ 0
+Text Label 10500 6400 1    60   ~ 0
 3v3
-Text Label 10850 5550 3    60   ~ 0
+Text Label 10700 5250 3    60   ~ 0
 SCL
 $Comp
 L +12V #PWR011
 U 1 1 56F686E7
-P 10650 5450
-F 0 "#PWR011" H 10650 5300 50  0001 C CNN
-F 1 "+12V" H 10650 5590 50  0000 C CNN
-F 2 "" H 10650 5450 50  0000 C CNN
-F 3 "" H 10650 5450 50  0000 C CNN
-	1    10650 5450
-	1    0    0    -1  
+P 10500 5100
+F 0 "#PWR011" H 10500 4950 50  0001 C CNN
+F 1 "+12V" H 10500 5240 50  0000 C CNN
+F 2 "" H 10500 5100 50  0000 C CNN
+F 3 "" H 10500 5100 50  0000 C CNN
+	1    10500 5100
+	0    -1   -1   0   
 $EndComp
-$Comp
-L CONN_01X07 P8
-U 1 1 56F69224
-P 10650 6100
-F 0 "P8" H 10650 6500 50  0000 C CNN
-F 1 "Aux2 (I2C)" V 10750 6100 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x07" H 10650 6100 50  0001 C CNN
-F 3 "" H 10650 6100 50  0000 C CNN
-	1    10650 6100
-	0    1    1    0   
-$EndComp
-Text Label 10950 5550 3    60   ~ 0
+Text Label 10700 6400 1    60   ~ 0
 SDA
-Wire Wire Line
-	10950 5900 10950 5550
-Wire Wire Line
-	10850 5900 10850 5550
 $Comp
 L R R2
 U 1 1 56F6AB41
@@ -986,16 +938,14 @@ Text Label 3250 4600 2    60   ~ 0
 SPI0_CE0
 Text Label 3250 4700 2    60   ~ 0
 SPI0_CE1
-Text Label 9800 5450 3    60   ~ 0
+Text Label 10000 6400 1    60   ~ 0
 SPI0_CE0
-Text Label 9900 5450 3    60   ~ 0
+Text Label 9900 5250 3    60   ~ 0
 SPI0_MOSI
-Text Label 10000 5450 3    60   ~ 0
+Text Label 9900 6400 1    60   ~ 0
 SPI0_MISO
-Text Label 10100 5450 3    60   ~ 0
+Text Label 9800 5250 3    60   ~ 0
 SPI0_SCLK
-Wire Wire Line
-	10100 5900 10100 5450
 $Comp
 L C C3
 U 1 1 5701322C
@@ -1181,9 +1131,9 @@ Text Label 5400 3500 2    60   ~ 0
 Pi5v
 Text Label 7900 5550 3    60   ~ 0
 Pi5v
-Text Label 9700 5450 3    60   ~ 0
+Text Label 9700 6400 1    60   ~ 0
 Pi5v
-Text Label 10550 5550 3    60   ~ 0
+Text Label 10400 6400 1    60   ~ 0
 Pi5v
 $Comp
 L R R1
@@ -1229,4 +1179,113 @@ Wire Wire Line
 	1250 6400 1250 6250
 Wire Wire Line
 	1250 5950 1250 5650
+$Comp
+L CONN_01X03 P11
+U 1 1 571D4AB7
+P 5950 6100
+F 0 "P11" H 5950 6300 50  0000 C CNN
+F 1 "Debug" V 6050 6100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 5950 6100 50  0001 C CNN
+F 3 "" H 5950 6100 50  0000 C CNN
+	1    5950 6100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 5900 6050 5600
+Wire Wire Line
+	5950 5900 5950 5600
+Wire Wire Line
+	5850 5900 5850 5600
+Wire Wire Line
+	5050 4500 5400 4500
+Wire Wire Line
+	5050 4600 5400 4600
+Text Label 5850 5600 3    60   ~ 0
+GND
+Text Label 5950 5600 3    60   ~ 0
+D11
+Text Label 5400 4500 2    60   ~ 0
+D11
+Text Label 6050 5600 3    60   ~ 0
+D10
+Text Label 5400 4600 2    60   ~ 0
+D10
+$Comp
+L CONN_02X04 P7
+U 1 1 571D5F10
+P 9850 5850
+F 0 "P7" H 9850 6100 50  0000 C CNN
+F 1 "Aux1 (SPI)" H 9850 5600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x04" H 9850 4650 50  0001 C CNN
+F 3 "" H 9850 4650 50  0000 C CNN
+	1    9850 5850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_02X04 P8
+U 1 1 571D5F79
+P 10550 5850
+F 0 "P8" H 10550 6100 50  0000 C CNN
+F 1 "Aux2 (I2C)" H 10550 5600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x04" H 10550 4650 50  0001 C CNN
+F 3 "" H 10550 4650 50  0000 C CNN
+	1    10550 5850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9700 6100 9700 6400
+Wire Wire Line
+	9800 6100 9800 6400
+Wire Wire Line
+	9900 6100 9900 6400
+Wire Wire Line
+	10000 6100 10000 6400
+Wire Wire Line
+	10000 5250 10000 5600
+Wire Wire Line
+	9900 5250 9900 5600
+Wire Wire Line
+	9800 5250 9800 5600
+Wire Wire Line
+	9700 5250 9700 5600
+Text Label 10000 5250 3    60   ~ 0
+SPI0_CE1
+Wire Wire Line
+	10400 6100 10400 6400
+Wire Wire Line
+	10500 6100 10500 6400
+Wire Wire Line
+	10600 6100 10600 6400
+Wire Wire Line
+	10700 6100 10700 6400
+Wire Wire Line
+	10700 5600 10700 5250
+Wire Wire Line
+	10600 5600 10600 5250
+Wire Wire Line
+	10500 5600 10500 5100
+Wire Wire Line
+	10400 5600 10400 5250
+Wire Wire Line
+	2900 4000 3250 4000
+Text Label 3250 4000 2    60   ~ 0
+GPIO18
+Text Label 2100 6400 0    60   ~ 0
+GPIO18
+Text Label 3250 5400 2    60   ~ 0
+GPIO21
+Wire Wire Line
+	2900 5300 3250 5300
+Text Label 3250 5300 2    60   ~ 0
+GPIO20
+Text Label 10600 6400 1    60   ~ 0
+GPIO20
+Wire Wire Line
+	4100 3700 3750 3700
+Wire Wire Line
+	1650 5300 1250 5300
+Text Label 3750 3700 0    60   ~ 0
+ArdRST
+Text Label 1250 5300 0    60   ~ 0
+ArdRST
 $EndSCHEMATC
