@@ -9,6 +9,8 @@ Repo branches:
 
 Master is at v1.01b
 
+PCBs in the wild (4) at v1.0b
+
 * v1.0a - Pi 2/3 add-on board. Original version.
 * v1.0b - Pi 2/3 HAT spec capable board. PCB follows the Pi Foundation HAT spec https://github.com/raspberrypi/hats
 * v1.01b - Fixes - Swapped com port pins (Pi Tx/Rx now nearest GPIO and Arduino Tx/Rx nearest Arduino as that seems more logical) - Changed LED for Bi-colour LED, uses existing LED GPIO Pin 7 (GP4) and adds Pin 17 (GP17) - Removed plating from NTPH camera slot - Fixed front silk screen Endstop2 graphic line now points to P3.
